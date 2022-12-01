@@ -1,2 +1,1 @@
-import & modules
-Python
+Solutions to tasks on modules
