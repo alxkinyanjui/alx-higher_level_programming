@@ -1,10 +1,18 @@
 #!/usr/bin/python3
-say_my_name = __import__('3-say_my_name').say_my_name
+Square = __import__('3-square').Square
 
-say_my_name("John", "Smith")
-say_my_name("Walter", "White")
-say_my_name("Bob")
+my_square_1 = Square(3)
+print("Area: {}".format(my_square_1.area()))
+
 try:
-    say_my_name(12, "White")
+    print(my_square_1.size)
 except Exception as e:
     print(e)
+
+try:
+    print(my_square_1.__size)
+except Exception as e:
+    print(e)
+
+my_square_2 = Square(5)
+print("Area: {}".format(my_square_2.area()))

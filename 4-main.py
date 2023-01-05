@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-print_square = __import__('4-print_square').print_square
+Square = __import__('4-square').Square
 
-print_square(4)
-print("")
-print_square(10)
-print("")
-print_square(0)
-print("")
-print_square(1)
-print("")
+my_square = Square(89)
+print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+
+my_square.size = 3
+print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+
 try:
-    print_square(-1)
+    my_square.size = "5 feet"
+    print("Area: {} for size: {}".format(my_square.area(), my_square.size))
 except Exception as e:
     print(e)
-print("")

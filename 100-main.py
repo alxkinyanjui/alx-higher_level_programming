@@ -1,5 +1,16 @@
 #!/usr/bin/python3
-matrix_mul = __import__('100-matrix_mul').matrix_mul
+SinglyLinkedList = __import__('100-singly_linked_list').SinglyLinkedList
 
-print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
-print(matrix_mul([[1, 2]], [[3, 4], [5, 6]]))
+sll = SinglyLinkedList()
+sll.sorted_insert(2)
+sll.sorted_insert(5)
+sll.sorted_insert(3)
+sll.sorted_insert(10)
+sll.sorted_insert(1)
+sll.sorted_insert(-4)
+sll.sorted_insert(-3)
+sll.sorted_insert(4)
+sll.sorted_insert(5)
+sll.sorted_insert(12)
+sll.sorted_insert(3)
+print(sll)
